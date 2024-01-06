@@ -9,6 +9,7 @@ import Footer from "../Components/Layout/Footer";
 import FeaturedProject from "../Components/FeaturedProject";
 import Homepage from "../Components/Homepage";
 import Steps from "../Components/Steps";
+import Customer from "../Components/Customer";
 
 function LandingPage() {
     return (
@@ -21,6 +22,7 @@ function LandingPage() {
             <FeaturedProject />
             <Benefit />
             <Contact />
+            <Customer />
             <Advert />
             <Footer />
         </div>

@@ -1,19 +1,19 @@
 import React, {useState} from 'react'
 import Hompage from '../Assets/Images/homepage.png'
 import JoinWaitList from "./Joinwaitlist";
-// import backgroundImage from "../Assets/Images/Homebaner.png";
+import backgroundImage from "../Assets/Images/Homebaner.png";
 
 function Homepage() {
     const [isOpen, setIsOpen] = useState(false)
 
-    // const containerStyle: React.CSSProperties = {
-    //     backgroundImage: `url(${backgroundImage})`,
-    //     backgroundSize: 'cover',
-    //     backgroundPosition: 'center',
-    // };
+    const containerStyle: React.CSSProperties = {
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+    };
     return (
         <div>
-            <div className='flex linearGradient w-full' >
+            <div className='flex linearGradient w-full'  style={containerStyle}>
                 <div>
                     <div className='w-10/12 xl:w-1/2 lg:w-1/2 mx-auto lg:py-0 py-8 '>
                         <h2 className=' font-bold text-4xl leading-10'>
