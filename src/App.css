@@ -33,7 +33,7 @@
 .featuredProperty {
     grid-gap: 25px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(296px,1fr));
     padding: 3rem 0 1.5rem;
     justify-items: center;
 }

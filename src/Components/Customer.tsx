@@ -7,12 +7,12 @@ function Customer() {
     return (
         <div>
             <div className='text-center'>
-                <h1 className='text-4xl font-bold text-black pb-3.5'>
+                <h1 className='text-2xl md:text-4xl font-bold text-black pb-3.5'>
                     From our happy customers
                 </h1>
                 <p className='text-custom text-xs'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed tristique metus proin id lorem odio</p>
             </div>
-            <div className='w-10/12 lg:w-10/12 md:w-11/12 xl:w-8/12 mx-auto flex gap-7 py-12 justify-center'>
+            <div className='flex-col md:flex-row w-10/12 lg:w-10/12 md:w-11/12 xl:w-8/12 mx-auto md:flex gap-7 py-12 justify-center'>
                 <div className='flex flex-col items-center justify-center'>
                     <div className='customerCard flex flex-col items-center justify-center text-center p-6'>
                         <CustomerChat/>

@@ -10,12 +10,12 @@ import {ReactComponent as HitwDeal} from "../Assets/Icons/HitwDeal.svg";
 function Steps() {
     const [image, setImage] = useState('SignUp')
     return (
-        <div className='lg:flex lg:justify-center md:flex md:justify-center p-3'>
+        <div className='lg:flex lg:justify-center md:flex md:justify-center pb-14 md:pb-3 p-3'>
             <div className='md:w-full lg:w-10/12 p-3 text-center'>
                 <p className='text-sm text-custom-green'>How It Works</p>
-                <h1 className='text-4xl font-bold pb-3'>Here's a step-by-step guide <br/> on how the process works</h1>
-                <div className='flex'>
-                    <div className='w-1/2'>
+                <h1 className='text-2xl md:text-4xl font-bold pb-3'>Here's a step-by-step guide <br/> on how the process works</h1>
+                <div className='flex gap-2.5'>
+                    <div className='w-full md:w-1/2'>
                         <div className='flex steps' onMouseOver={() => setImage('SignUp')}>
                             <div className='block w-10 flex-shrink-0'>
                                 <span className='block h-10 rounded-full mb-2 bg-custom-grey card-hover:bg-custom-darkgreen text-white font-semibold p-2'>
@@ -85,8 +85,8 @@ function Steps() {
                             </div>
                         </div>
                     </div>
-                    <div className='  w-1/2  my-7'>
-                        <div className='w-8/12 mx-auto h-full howItWork bg-custom-grey items-center flex justify-center'>
+                    <div className='hidden md:block  w-1/2  my-7'>
+                        <div className='w-full xl:w-8/12 mx-auto h-full howItWork bg-custom-grey items-center flex justify-center'>
 
                             {
                                 image === "SignUp" ?

@@ -188,7 +188,7 @@ function FeaturedProject() {
                     {Investment.map((investment, index) => {
                         return (
                             <div key={index}
-                                 className='rounded-3xl overflow-hidden w-[285px] bg-white border border-custom-grey'>
+                                 className='rounded-3xl overflow-hidden xl:w-[285px] bg-white border border-custom-grey'>
                                 <div className='relative'>
                                     <img src={propertyImage} alt='investment' className='w-full'/>
                                     <span
@@ -307,10 +307,10 @@ function FeaturedProject() {
                     {/*    })*/}
                     {/*}*/}
                 </div>
-                <div className='flex justify-between w-full lg:w-10/12 mx-auto pb-12 items-center'>
-                    <p className='text-xs'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                <div className='flex lg:justify-between justify-end md:justify-end px-2 md:px-2 w-full lg:w-10/12 mx-auto pb-12 items-center'>
+                    <p className=' hidden text-xs md:hidden lg:block'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button className='border border-black font-semibold bg-white text-sm rounded-full py-2 px-4'>See More</button>
+                    <button className='border border-black lg:w-2/12 md:w-fit font-semibold bg-white text-sm rounded-full py-2 px-4'>See More</button>
                 </div>
             </div>
         </div>
