@@ -5,7 +5,7 @@ import {ReactComponent as Searchmagnify} from "../../Assets/Icons/searchmagnify.
 import {ReactComponent as Flag} from "../../Assets/Icons/flag.svg";
 import {ReactComponent as Fullscreen} from "../../Assets/Icons/fullscreen.svg";
 import {ReactComponent as Notification} from "../../Assets/Icons/notification.svg";
-import {Element3, HambergerMenu, Wallet3, Briefcase} from "iconsax-react";
+import {Element3, HambergerMenu, Wallet3, Briefcase, User} from "iconsax-react";
 
 
 function Navbar() {
@@ -61,13 +61,15 @@ function Navbar() {
                         <div>
                             <Notification className='w-7/12 lg:w-full md:w-full'/>
                         </div>
-                        <div className='flex bg-custom-light-grey p-3'>
-                            <Searchmagnify className='self-center'/>
+                        <div className='flex bg-custom-light-grey p-3 gap-2 items-center'>
+                            <div className='bg-white w-8 h-8 flex justify-center items-center rounded-full'>
+                                <User variant="Bold" color='#F3F3F9' className='self-center'/>
+                            </div>
                             <div>
                                 <h5 className='font-semibold text-sm'>
                                     Laguda Temitayo
                                 </h5>
-                                <p className='text-sm'>Founder</p>
+                                <p className='text-sm text-custom'>Founder</p>
                             </div>
                         </div>
                     </div>
