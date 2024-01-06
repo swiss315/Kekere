@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Gotham Regular */
+@font-face {
+    font-family: 'Gotham';
+    src: local('Gotham Book'), url(./Assets/Font/GothamScreenSmart/GothamSSm-Light.otf) format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Gotham Semi Bold */
+@font-face {
+    font-family: 'Gotham';
+    src: local('Gotham Medium'), url(./Assets/Font/GothamScreenSmart/GothamSSm-Medium.otf) format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Gotham Bold */
+@font-face {
+    font-family: 'Gotham';
+    src: local('Gotham Bold'), url(./Assets/Font/GothamScreenSmart/GothamSSm-Bold.otf) format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Gotham Italic */
+@font-face {
+    font-family: 'Gotham';
+    src: local('Gotham Italic'), url(./Assets/Font/Gotham/Gotham-BookItalic.otf) format('opentype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root {
+    --primarycolor: #1178FF;
+    --secondarycolor: #002099;
+    --fontfamily: 'Gotham';
+}
+
+body {
+    margin: 0;
+    line-height: 1.4;
+    font-family: Gotham, sans-serif, 'Open Sans', 'Helvetica Neue' ;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
