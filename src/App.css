@@ -109,4 +109,10 @@
     box-shadow: 0px 4px 26px 0px #42474C14;
 }
 
+@media (min-width: 1024px) {
+    .slick-active {
+        padding: 0 6px !important;
+    }
+}
+
 

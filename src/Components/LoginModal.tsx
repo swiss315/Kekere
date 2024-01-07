@@ -36,12 +36,12 @@ function LoginModal(props: any) {
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                            <Dialog.Panel className="w-full transform overflow-hidden max-w-[50%] rounded-2xl bg-white text-left align-middle shadow-xl transition-all">
+                            <Dialog.Panel className="w-full transform overflow-hidden lg:max-w-[75%] xl:max-w-[50%] rounded-2xl bg-white text-left align-middle shadow-xl transition-all">
                                 <div className='flex'>
-                                    <div className='w-5/12'>
+                                    <div className='w-5/12 hidden md:block'>
                                         <img src={loginImg} alt='signup' className='' />
                                     </div>
-                                    <form className='w-7/12 p-7'>
+                                    <form className='w-full md:w-7/12 p-7 md:pb-0 pt-3.5'>
                                         <div className='flex justify-between'>
                                             <h3 className='font-semibold text-xl'>
                                                 Login
@@ -66,7 +66,7 @@ function LoginModal(props: any) {
                                                 <input className="focus-visible:outline-0 w-full p-3 pl-10 border border-input-color rounded-custom" type="password" placeholder="Enter your username" />
                                             </div>
                                         </div>
-                                        <button className='w-full pt-3 mt-3.5 bg-custom-darkgreen text-white font-semibold rounded-custom py-2'>
+                                        <button className='text-sm md:text-md w-full pt-3 mt-3.5 bg-custom-darkgreen text-white font-semibold rounded-custom py-2'>
                                             Sign Up
                                         </button>
                                         <div className='text-end text-custom font-semibold cursor-pointer py-3 text-sm'>
@@ -74,15 +74,15 @@ function LoginModal(props: any) {
                                         </div>
                                         <div className='flex gap-2 items-center text-sm'>
                                             <hr className='w-full'/>
-                                            <p className='w-full text-custom text-center'>or Login with</p>
+                                            <p className='w-full text-custom text-center text-sm md:text-md flex-grow whitespace-nowrap'>or Login with</p>
                                             <hr className='w-full'/>
                                         </div>
                                         {/*Social Login*/}
                                         <div className='flex justify-between gap-4 pt-6'>
-                                            <button type='button' className=' flex gap-3 items-center w-full border-custom font-semibold border py-3 px-7 rounded-custom'>
+                                            <button type='button' className='text-sm md:text-md flex gap-3 items-center w-full border-custom font-semibold border py-3 px-7 rounded-custom'>
                                                 <GoogleIcon /> Google
                                             </button>
-                                            <button type='button' className='flex gap-3 items-center w-full border-custom font-semibold border py-3 px-7 rounded-custom'>
+                                            <button type='button' className='text-sm md:text-md flex gap-3 items-center w-full border-custom font-semibold border py-3 px-3.5 md:px-7 rounded-custom'>
                                                 <FacebookIcon /> Facebook
                                             </button>
                                         </div>

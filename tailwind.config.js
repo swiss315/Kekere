@@ -22,7 +22,8 @@ module.exports = {
         '17%': '17%'
       },
       Width: {
-        '285px': '285px'
+        '285px': '285px',
+        '200px': '200px'
       },
       backgroundColor: {
         'custom-green': '#52B947',

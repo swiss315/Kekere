@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import {Link, useLocation} from "react-router-dom";
 import {ReactComponent as Logo} from "../../Assets/Icons/Logo.svg";
 import {ReactComponent as Searchmagnify} from "../../Assets/Icons/searchmagnify.svg";
@@ -35,6 +35,18 @@ function Navbar() {
             icon: Wallet3
         },
     ]
+    const size = useRef(18)
+
+    const sizeSettings = () => {
+        const screenWidth = window.innerWidth;
+
+        if (screenWidth <= 390) {
+            size.current = 12
+
+        }
+    }
+
+    sizeSettings()
 
     return (
         <div className='navbarshadow'>
@@ -42,9 +54,9 @@ function Navbar() {
                 <div className=' flex justify-between'>
                     <div className='flex gap-5 justify-center items-center'>
                         <Link to='/'>
-                            <Logo className='w-7/12 lg:w-full md:w-full h-10'/>
+                            <Logo className='w-full md:w-7/12 lg:w-full md:w-full h-10'/>
                         </Link>
-                        <div className='flex bg-custom-light-grey rounded-md h-fit self-center p-3'>
+                        <div className='hidden md:flex bg-custom-light-grey rounded-md h-fit self-center p-3'>
                             <Searchmagnify/>
                             <input type='text'
                                    className='border-0 bg-custom-light-grey focus-visible:outline-0 rounded-md'
@@ -53,34 +65,34 @@ function Navbar() {
                     </div>
                     <div className='flex gap-5 justify-center items-center'>
                         <div>
-                            <Flag className='w-7/12 lg:w-full md:w-full'/>
+                            <Flag className='w-7/12 lg:w-full md:w-full hidden md:block'/>
                         </div>
                         <div>
-                            <Fullscreen className='w-7/12 lg:w-full md:w-full'/>
+                            <Fullscreen className=' hidden md:block w-7/12 lg:w-full md:w-full'/>
                         </div>
                         <div>
                             <Notification className='w-7/12 lg:w-full md:w-full'/>
                         </div>
-                        <div className='flex bg-custom-light-grey p-3 gap-2 items-center'>
-                            <div className='bg-white w-8 h-8 flex justify-center items-center rounded-full'>
+                        <div className='flex bg-custom-light-grey p-1.5 md:p-3 gap-2 items-center'>
+                            <div className='bg-white w-4 h-4 md:w-8 md:h-8 flex justify-center items-center rounded-full'>
                                 <User variant="Bold" color='#F3F3F9' className='self-center'/>
                             </div>
                             <div>
-                                <h5 className='font-semibold text-sm'>
+                                <h5 className='font-semibold text-xs md:text-sm'>
                                     Laguda Temitayo
                                 </h5>
-                                <p className='text-sm text-custom'>Founder</p>
+                                <p className='text-xs md:text-sm text-custom'>Founder</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <ul className='flex p-3 px-6 gap-10 items-center'>
+                    <ul className='flex p-3 px-6 gap-2.5 md:gap-10 items-center justify-center md:justify-start'>
                         {
                             Dashboard.map((dashboard, index) => {
                                 return (
-                                    <Link to={dashboard.pathname} key={index} className={`flex gap-1 text-sm cursor-pointer ${pageName === dashboard.pathname ? 'bg-custom-midnightgreen rounded-full p-2 px-4 text-white' : 'text-custom'}`}>
-                                        <dashboard.icon size="18" color={pageName === dashboard.pathname ? '#ffffff' : '#6D7080'}/>
+                                    <Link to={dashboard.pathname} key={index} className={`flex gap-1 text-xs md:text-sm items-center cursor-pointer ${pageName === dashboard.pathname ? 'bg-custom-midnightgreen rounded-full p-2 md:px-4 px-2 text-white' : 'text-custom'}`}>
+                                        <dashboard.icon size={size.current} color={pageName === dashboard.pathname ? '#ffffff' : '#6D7080'}/>
                                         <span>{dashboard.Name}</span>
                                     </Link>
                                 )

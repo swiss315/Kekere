@@ -4,15 +4,15 @@ import {ArrowRight, Bank} from "iconsax-react";
 
 function Wallet() {
     return (
-        <div className='py-10 h-full'>
-            <div className='rounded-3xl bg-white w-11/12 mx-auto flex '>
-                <div className='border-r border-custom w-8/12 py-12 px-11'>
+        <div className='py-10'>
+            <div className='rounded-3xl bg-white w-11/12 mx-auto flex flex-col md:flex-row'>
+                <div className='border-r-0 md:border-r border-custom w-full md:w-7/12 lg:w-8/12 py-12 px-7 lg:px-11'>
                     <h1 className='text-2xl font-bold pb-6 '>
                         Personal Wallet
                     </h1>
-                    <div className='flex gap-8'>
+                    <div className='flex gap-8 flex-wrap lg:flex-nowrap'>
                         <div className='rounded-2xl bg-custom-light-green w-full p-4'>
-                            <div className='flex gap-x-3.5 items-center'>
+                            <div className='flex lg:gap-x-2.5 xl:gap-x-3.5 items-center'>
                                 <span
                                     className='flex justify-center w-8 h-8 bg-white rounded-full text-custom-darkgreen font-bold text-xl text-center items-center'>₦</span><span
                                 className='text-xs'>Naira Account</span>
@@ -37,7 +37,7 @@ function Wallet() {
                         </div>
                     </div>
                 </div>
-                <div className='w-4/12 py-12 px-11'>
+                <div className='w-full md:w-5/12 lg:w-4/12 py-12 px-7 lg:px-11'>
                     <div className='rounded-xl border border-custom overflow-hidden'>
                         <button className=' border border-custom flex justify-between p-4 w-full'>
                             <div className='flex items-center gap-2'>
