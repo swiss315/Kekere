@@ -78,10 +78,10 @@ function Navbar() {
                                 <User variant="Bold" color='#F3F3F9' className='self-center'/>
                             </div>
                             <div>
-                                <h5 className='font-semibold text-xs md:text-sm'>
+                                <h5 className='font-semibold text-xs md:text-xs'>
                                     Laguda Temitayo
                                 </h5>
-                                <p className='text-xs md:text-sm text-custom'>Founder</p>
+                                <p className='text-xs md:text-xs text-custom'>Founder</p>
                             </div>
                         </div>
                     </div>
@@ -91,9 +91,9 @@ function Navbar() {
                         {
                             Dashboard.map((dashboard, index) => {
                                 return (
-                                    <Link to={dashboard.pathname} key={index} className={`flex gap-1 text-xs md:text-sm items-center cursor-pointer ${pageName === dashboard.pathname ? 'bg-custom-midnightgreen rounded-full p-2 md:px-4 px-2 text-white' : 'text-custom'}`}>
+                                    <Link to={dashboard.pathname} key={index} className={`flex gap-1 text-xs md:text-sm items-center font-semibold cursor-pointer ${pageName === dashboard.pathname ? 'bg-custom-midnightgreen rounded-full p-2 md:px-4 px-2 text-white' : 'text-custom'}`}>
                                         <dashboard.icon size={size.current} color={pageName === dashboard.pathname ? '#ffffff' : '#6D7080'}/>
-                                        <span>{dashboard.Name}</span>
+                                        <span className={`${pageName === dashboard.pathname ? 'text-white font-semibold' : ''}`}>{dashboard.Name}</span>
                                     </Link>
                                 )
                             })
