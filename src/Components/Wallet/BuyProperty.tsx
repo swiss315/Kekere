@@ -59,7 +59,7 @@ function BuyProperty(props: any) {
                 <div className='flex items-center gap-2 py-4 cursor-pointer'>
                     <ArrowCircleLeft2 size="42" variant="Bold" color="#20996B" onClick={() => props.onHide()}/>
                 </div>
-                { review ?
+                { !review ?
                     <div className='w-8/12 rounded-3xl bg-white mx-auto py-6 px-16 flex justify-between'>
                         <div className='w-4/12'>
                             <h1 className='font-bold pb-3 text-xl '>
