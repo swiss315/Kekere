@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import {Copy} from "iconsax-react";

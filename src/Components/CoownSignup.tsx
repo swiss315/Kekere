@@ -1,6 +1,5 @@
 import React from "react";
 import {ReactComponent as RegisterBg} from "../Assets/Images/registerbg.svg"
-import {ReactComponent as CancelIcon} from '../Assets/Icons/cancel.svg';
 import {ReactComponent as UserIcon} from '../Assets/Icons/usernamicon.svg';
 import {ReactComponent as EmailIcon} from '../Assets/Icons/Emailiconwhite.svg';
 import {ReactComponent as PasswordIcon} from '../Assets/Icons/passwordicon.svg';

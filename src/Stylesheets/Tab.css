@@ -7,12 +7,14 @@
   display: flex;
   position: relative;
   background-color: #fff;
-  box-shadow: 0 0 1px 0 rgba(#185ee0, 0.15), 0 6px 12px 0 rgba(#185ee0, 0.15);
+  /*box-shadow: 0 0 1px 0 rgba(#185ee0, 0.15), 0 6px 12px 0 rgba(#185ee0, 0.15);*/
   padding: 0.5rem;
   border-radius: 99px;
-  * {
-    z-index: 2;
-  }
+
+}
+
+.tabs > * {
+  z-index: 2;
 }
 
 input[type="radio"] {
@@ -44,46 +46,68 @@ input[type="radio"] {
   transition: 0.15s ease-in;
 }
 
-input[type="radio"] {
-  &:checked {
-    & + label {
-      color: #ffffff;
-    }
-  }
+/*input[type="radio"] {*/
+/*  &:checked {*/
+/*    & + label {*/
+/*      color: #ffffff;*/
+/*    }*/
+/*  }*/
+/*}*/
+
+input[type="radio"]:checked + label {
+  color: #ffffff;
 }
 
-input[id="personal"] {
-  &:checked {
-    & ~ .glider {
-      color: #ffffff;
-      transform: translateX(0);
-    }
-  }
+input[id="personal"]:checked ~ .glider {
+  transform: translateX(0);
+  color: #ffffff;
 }
 
-input[id="nextofkin"] {
-  &:checked {
-    & ~ .glider {
-      transform: translateX(100%);
-    }
-  }
+/* Apply styles for other tabs when checked */
+input[id="nextofkin"]:checked ~ .glider {
+  transform: translateX(100%);
 }
 
-input[id="bankandcard"] {
-  &:checked {
-    & ~ .glider {
-      transform: translateX(200%);
-    }
-  }
+input[id="bankandcard"]:checked ~ .glider {
+  transform: translateX(200%);
 }
 
-input[id="changepassword"] {
-  &:checked {
-    & ~ .glider {
-      transform: translateX(300%);
-    }
-  }
+input[id="changepassword"]:checked ~ .glider {
+  transform: translateX(300%);
 }
+
+/*input[id="personal"] {*/
+/*  &:checked {*/
+/*    & ~ .glider {*/
+/*      color: #ffffff;*/
+/*      transform: translateX(0);*/
+/*    }*/
+/*  }*/
+/*}*/
+
+/*input[id="nextofkin"] {*/
+/*  &:checked {*/
+/*    & ~ .glider {*/
+/*      transform: translateX(100%);*/
+/*    }*/
+/*  }*/
+/*}*/
+
+/*input[id="bankandcard"] {*/
+/*  &:checked {*/
+/*    & ~ .glider {*/
+/*      transform: translateX(200%);*/
+/*    }*/
+/*  }*/
+/*}*/
+
+/*input[id="changepassword"] {*/
+/*  &:checked {*/
+/*    & ~ .glider {*/
+/*      transform: translateX(300%);*/
+/*    }*/
+/*  }*/
+/*}*/
 
 .glider {
   position: absolute;
