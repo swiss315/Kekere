@@ -1,7 +1,7 @@
 import React from 'react'
-import  {ReactComponent as CustomerChat} from '../Assets/Icons/customerchat.svg'
-import  {ReactComponent as ArrowDown} from '../Assets/Icons/arrowdown.svg'
-import Review from '../Assets/Images/testimonial.png'
+import  {ReactComponent as CustomerChat} from '../../Assets/Icons/customerchat.svg'
+import  {ReactComponent as ArrowDown} from '../../Assets/Icons/arrowdown.svg'
+import Review from '../../Assets/Images/testimonial.png'
 
 function Customer() {
     return (

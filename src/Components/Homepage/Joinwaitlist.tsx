@@ -1,7 +1,7 @@
 import React from "react";
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
-import WaitlistImage from '../Assets/Images/WaitlistImage.png'
+import WaitlistImage from '../../Assets/Images/WaitlistImage.png'
 
 function JoinWaitList(props: any) {
     const containerStyle: React.CSSProperties = {

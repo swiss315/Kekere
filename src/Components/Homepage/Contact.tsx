@@ -1,15 +1,15 @@
 import React from 'react'
-import backgroundImage from "../Assets/Images/contactbg.png";
-import {ReactComponent as LocationIcon} from '../Assets/Icons/Locationicon.svg';
-import {ReactComponent as PhoneIcon} from '../Assets/Icons/phoneicon.svg';
-import {ReactComponent as MailIcon} from '../Assets/Icons/mailicon.svg';
-import {ReactComponent as Line} from '../Assets/Icons/Line.svg';
-import {ReactComponent as ContactIcon} from '../Assets/Icons/contacticon.svg';
-import {ReactComponent as NameIcon} from '../Assets/Icons/nameIcon.svg';
-import {ReactComponent as EmailIcon} from '../Assets/Icons/emailicon.svg';
-import {ReactComponent as PhoneInputIcon} from '../Assets/Icons/phoneinputicon.svg';
-import {ReactComponent as PropertyType} from '../Assets/Icons/propertytype.svg';
-import {ReactComponent as Telegram} from '../Assets/Icons/telegramicon.svg';
+import backgroundImage from "../../Assets/Images/contactbg.png";
+import {ReactComponent as LocationIcon} from '../../Assets/Icons/Locationicon.svg';
+import {ReactComponent as PhoneIcon} from '../../Assets/Icons/phoneicon.svg';
+import {ReactComponent as MailIcon} from '../../Assets/Icons/mailicon.svg';
+import {ReactComponent as Line} from '../../Assets/Icons/Line.svg';
+import {ReactComponent as ContactIcon} from '../../Assets/Icons/contacticon.svg';
+import {ReactComponent as NameIcon} from '../../Assets/Icons/nameIcon.svg';
+import {ReactComponent as EmailIcon} from '../../Assets/Icons/emailicon.svg';
+import {ReactComponent as PhoneInputIcon} from '../../Assets/Icons/phoneinputicon.svg';
+import {ReactComponent as PropertyType} from '../../Assets/Icons/propertytype.svg';
+import {ReactComponent as Telegram} from '../../Assets/Icons/telegramicon.svg';
 
 
 function Contact() {

@@ -7,6 +7,7 @@ import Portfolio from "../../Pages/Portfolio";
 import Viewproperty from "../../Pages/Viewproperty";
 import Listing from "../../Pages/Listing";
 import Wallet from "../../Pages/Wallet";
+import Setting from "../../Pages/Setting";
 
 function Layout() {
     return (
@@ -19,6 +20,8 @@ function Layout() {
                     <Route path='/property/:id' element={<Viewproperty />} />
                     <Route path='/listing' element={<Listing />} />
                     <Route path='/wallet' element={<Wallet />} />
+                    <Route path='/setting' element={<Setting />} />
+
                 </Routes>
             </div>
             <Footer />

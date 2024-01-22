@@ -14,6 +14,7 @@ import Placeholder3 from "../Assets/Images/placeholder3.png";
 import Placeholder4 from "../Assets/Images/placeholder4.png";
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import {useNavigate} from "react-router-dom";
+import BuyProperty from "../Components/Wallet/BuyProperty";
 
 function Viewproperty() {
     const navigate = useNavigate();
@@ -148,9 +149,13 @@ function Viewproperty() {
         lng: 150.644,
     };
 
+    let property = {
+        available: true,
+    }
+    const [buy, setBuy] = useState(false)
     return(
         <div className='py-10'>
-            <div className='w-11/12 mx-auto'>
+            {!buy ? <div className='w-11/12 mx-auto'>
                 <div className='flex items-center gap-2 py-4 cursor-pointer'>
                     <ArrowLeft size="32" color="#000000" onClick={() => navigate(-1)}/>
                     <p className='font-semibold'>Property Detail</p>
@@ -160,7 +165,8 @@ function Viewproperty() {
                         <h1 className='font-bold pb-3 text-xl '>
                             Price
                         </h1>
-                        <div className='bg-red-600 rounded-2xl w-full text-center py-4'>
+                        <div
+                            className={` rounded-2xl w-full text-center py-4 ${property.available ? 'bg-blue-600' : 'bg-red-600'}`}>
                             <span className='text-custom font-semibold'>Property Value</span>
                             <p className='font-bold text-white text-2xl py-6'>₦200,000,000</p>
                             <p className='text-white font-semibold text-sm'>Annual Return:₦6,000.000.00</p>
@@ -175,9 +181,11 @@ function Viewproperty() {
                                                 <div>
                                                 <span className='block h-8 w-7 bg-custom-white rounded-xl'>
                                                 </span>
-                                                    <div className={`bg-white ${index + 1 === ownerHistory.length ? 'hidden' : ''}`}>
+                                                    <div
+                                                        className={`bg-white ${index + 1 === ownerHistory.length ? 'hidden' : ''}`}>
                                                         {Array.from({length: 5}).map((_, index) => (
-                                                            <hr key={index} className={`h-0.5 w-1.5 mx-auto rounded border-0 horizontal-to-vertical my-3 bg-custom-white `}/>
+                                                            <hr key={index}
+                                                                className={`h-0.5 w-1.5 mx-auto rounded border-0 horizontal-to-vertical my-3 bg-custom-white `}/>
                                                         ))}
                                                     </div>
                                                 </div>
@@ -197,6 +205,11 @@ function Viewproperty() {
                                 }
                             </div>
                         </div>
+                        <button onClick={() => setBuy(true)}
+                            className=' bg-blue-600 text-sm w-full border-full py-1.5 text-white font-semibold my-5 rounded-full'
+                            style={{boxShadow: '0px 4px 4px 0px #00000040'}}>
+                            Buy Slot
+                        </button>
                     </div>
                     <div className='w-8/12'>
                         <div className='relative'>
@@ -246,7 +259,8 @@ function Viewproperty() {
                                         <p className='text-end text-white text-sm'>1 of 4</p>
                                         <div className='flex justify-between gap-1 pb-1.5'>
                                             {Array.from({length: image}).map((_, index) => (
-                                                <hr key={index} className={`h-2 w-8 rounded-full bg-custom-white opacity-25`}/>
+                                                <hr key={index}
+                                                    className={`h-2 w-8 rounded-full bg-custom-white opacity-25`}/>
                                             ))}
                                         </div>
                                     </div>
@@ -323,7 +337,8 @@ function Viewproperty() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> :
+                <BuyProperty onHide={() => setBuy(true)} />}
         </div>
     )
 }

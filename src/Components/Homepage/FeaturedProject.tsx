@@ -9,7 +9,7 @@ import React from 'react'
 // import {ReactComponent as Add} from "../Assets/Icons/addIcon.svg";
 // import coown from '../Assets/Images/coown.png'
 // import profilePhoto from '../Assets/Icons/profilephoto.png'
-import propertyImage from "../Assets/Images/propertyImage.png";
+import propertyImage from "../../Assets/Images/propertyImage.png";
 import {Link} from "react-router-dom";
 // import flip from '../Assets/Images/flip.png'
 // import land from '../Assets/Images/land.png'

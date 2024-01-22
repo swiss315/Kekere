@@ -1,7 +1,7 @@
 import React from "react";
-import coown from '../Assets/Images/coown.png'
-import {ReactComponent as RegisterIcon} from "../Assets/Icons/Registericon.svg";
-import {ReactComponent as PhoneIcon} from "../Assets/Icons/phonewhiteicon.svg";
+import coown from '../../Assets/Images/coown.png'
+import {ReactComponent as RegisterIcon} from "../../Assets/Icons/Registericon.svg";
+import {ReactComponent as PhoneIcon} from "../../Assets/Icons/phonewhiteicon.svg";
 
 
 function Advert() {

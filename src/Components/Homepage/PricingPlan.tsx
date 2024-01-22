@@ -1,7 +1,7 @@
 import React from "react";
-import coown from '../Assets/Images/coown.png'
-import flip from '../Assets/Images/flip.png'
-import land from '../Assets/Images/land.png'
+import coown from '../../Assets/Images/coown.png'
+import flip from '../../Assets/Images/flip.png'
+import land from '../../Assets/Images/land.png'
 
 function PricingPlan() {
     return (

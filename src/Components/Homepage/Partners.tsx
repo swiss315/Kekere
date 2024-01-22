@@ -1,11 +1,11 @@
 import React from "react";
-import {ReactComponent as PaddyCover} from "../Assets/Icons/paddycover.svg";
-import {ReactComponent as Vfd} from "../Assets/Icons/vfd.svg";
-import {ReactComponent as PropertyPro} from "../Assets/Icons/property.svg";
-import {ReactComponent as TechPartners} from "../Assets/Icons/techpatners.svg";
-import {ReactComponent as Anchoria} from "../Assets/Icons/anchoria.svg";
-import {ReactComponent as Dynasty} from "../Assets/Icons/dynasty.svg";
-import {ReactComponent as Herel} from "../Assets/Icons/herel.svg";
+import {ReactComponent as PaddyCover} from "../../Assets/Icons/paddycover.svg";
+import {ReactComponent as Vfd} from "../../Assets/Icons/vfd.svg";
+import {ReactComponent as PropertyPro} from "../../Assets/Icons/property.svg";
+import {ReactComponent as TechPartners} from "../../Assets/Icons/techpatners.svg";
+import {ReactComponent as Anchoria} from "../../Assets/Icons/anchoria.svg";
+import {ReactComponent as Dynasty} from "../../Assets/Icons/dynasty.svg";
+import {ReactComponent as Herel} from "../../Assets/Icons/herel.svg";
 
 
 function Partners() {

@@ -1,10 +1,10 @@
 import React from 'react'
-import backgroundImage from '../Assets/Images/easybg.png';
-import {ReactComponent as RPC} from '../Assets/Icons/rpv.svg';
-import {ReactComponent as Arrow} from '../Assets/Icons/Arrow.svg';
-import {ReactComponent as Dreamhouse} from '../Assets/Icons/Dreamhome.svg';
-import {ReactComponent as Passiveicon} from '../Assets/Icons/Passiveincome.svg';
-import {ReactComponent as Checkquality} from '../Assets/Icons/Checkquality.svg';
+import backgroundImage from '../../Assets/Images/easybg.png';
+import {ReactComponent as RPC} from '../../Assets/Icons/rpv.svg';
+import {ReactComponent as Arrow} from '../../Assets/Icons/Arrow.svg';
+import {ReactComponent as Dreamhouse} from '../../Assets/Icons/Dreamhome.svg';
+import {ReactComponent as Passiveicon} from '../../Assets/Icons/Passiveincome.svg';
+import {ReactComponent as Checkquality} from '../../Assets/Icons/Checkquality.svg';
 
 function Benefit() {
     const containerStyle: React.CSSProperties = {

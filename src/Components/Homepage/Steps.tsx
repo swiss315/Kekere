@@ -1,10 +1,10 @@
 import React, {useState} from "react";
-import {ReactComponent as Vertical} from "../Assets/Icons/vertical.svg";
-import {ReactComponent as HitwSignUp} from "../Assets/Icons/HitwSignup.svg";
-import {ReactComponent as HitwBrowser} from "../Assets/Icons/HitwBrowser.svg";
-import {ReactComponent as HitwChoose} from "../Assets/Icons/HitwChoose.svg";
-import {ReactComponent as HitwMonitor} from "../Assets/Icons/HitwMonitor.svg";
-import {ReactComponent as HitwDeal} from "../Assets/Icons/HitwDeal.svg";
+import {ReactComponent as Vertical} from "../../Assets/Icons/vertical.svg";
+import {ReactComponent as HitwSignUp} from "../../Assets/Icons/HitwSignup.svg";
+import {ReactComponent as HitwBrowser} from "../../Assets/Icons/HitwBrowser.svg";
+import {ReactComponent as HitwChoose} from "../../Assets/Icons/HitwChoose.svg";
+import {ReactComponent as HitwMonitor} from "../../Assets/Icons/HitwMonitor.svg";
+import {ReactComponent as HitwDeal} from "../../Assets/Icons/HitwDeal.svg";
 
 
 function Steps() {

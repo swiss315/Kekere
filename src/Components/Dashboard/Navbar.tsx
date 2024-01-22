@@ -3,9 +3,8 @@ import {Link, useLocation} from "react-router-dom";
 import {ReactComponent as Logo} from "../../Assets/Icons/Logo.svg";
 import {ReactComponent as Searchmagnify} from "../../Assets/Icons/searchmagnify.svg";
 import {ReactComponent as Flag} from "../../Assets/Icons/flag.svg";
-import {ReactComponent as Fullscreen} from "../../Assets/Icons/fullscreen.svg";
 import {ReactComponent as Notification} from "../../Assets/Icons/notification.svg";
-import {Element3, HambergerMenu, Wallet3, Briefcase, User} from "iconsax-react";
+import {Element3, HambergerMenu, Wallet3, Briefcase, User, Setting2} from "iconsax-react";
 
 
 function Navbar() {
@@ -67,9 +66,9 @@ function Navbar() {
                         <div>
                             <Flag className='w-7/12 lg:w-full md:w-full hidden md:block'/>
                         </div>
-                        <div>
-                            <Fullscreen className=' hidden md:block w-7/12 lg:w-full md:w-full'/>
-                        </div>
+                        <Link to='setting'>
+                            <Setting2 size="22" color="#000000"/>
+                        </Link>
                         <div>
                             <Notification className='w-7/12 lg:w-full md:w-full'/>
                         </div>

@@ -1,15 +1,15 @@
 import React from 'react'
 import Navbar from "../Components/Layout/Navbar";
-import Partners from "../Components/Partners";
-import PricingPlan from "../Components/PricingPlan";
-import Benefit from "../Components/Benefit";
-import Contact from "../Components/Contact";
-import Advert from "../Components/Advert";
+import Partners from "../Components/Homepage/Partners";
+import PricingPlan from "../Components/Homepage/PricingPlan";
+import Benefit from "../Components/Homepage/Benefit";
+import Contact from "../Components/Homepage/Contact";
+import Advert from "../Components/Homepage/Advert";
 import Footer from "../Components/Layout/Footer";
-import FeaturedProject from "../Components/FeaturedProject";
-import Homepage from "../Components/Homepage";
-import Steps from "../Components/Steps";
-import Customer from "../Components/Customer";
+import FeaturedProject from "../Components/Homepage/FeaturedProject";
+import Homepage from "../Components/Homepage/Homepage";
+import Steps from "../Components/Homepage/Steps";
+import Customer from "../Components/Homepage/Customer";
 
 function LandingPage() {
     return (

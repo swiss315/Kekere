@@ -30,7 +30,7 @@ module.exports = {
         'custom-darkgreen': '#3CB98A',
         'custom-grey': '#D9D9D9',
         'custom-light-grey': '#F3F3F9',
-        'custom-midnightgreen': '#286722',
+        'custom-midnightgreen': '#20996B',
         'custom-white': '#F3F3F9',
         'custom-light-green': '#35977F1A',
         'custom-light-purple': '#7855FF1A'

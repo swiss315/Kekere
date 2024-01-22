@@ -1,10 +1,9 @@
-import React, {useState} from 'react'
+import React from 'react'
 import signupPlayer from '../Assets/Images/signupPlayer.png'
 import signupListner from '../Assets/Images/signupLister.png'
-import SignupModal from "./SignupModal";
+import {Link} from "react-router-dom";
 
 function Signup() {
-    const [isOpen, setIsOpen] = useState(false)
 
     return (
             <div className='flex items-center' style={{height: '88vh'}}>
@@ -18,7 +17,7 @@ function Signup() {
                         Choose between buy and list.
                     </p>
                     <div className='lg:flex lg:gap-16'>
-                        <div onClick={() => setIsOpen(true)} className='register-card p-4 md:mb-10 mb-10 lg:mb-0'>
+                        <Link to='co-own' className='register-card p-4 md:mb-10 mb-10 lg:mb-0'>
                             <div>
                                 <img src={signupPlayer} alt='Sign Up Player' className='w-full lg:max-w-max md:max-w-[50%] md:mx-auto' />
                             </div>
@@ -30,8 +29,8 @@ function Signup() {
                                 learning and growing their skills, with over
                                 5,000 tutors ready to guide you.
                             </p>
-                        </div>
-                        <div onClick={() => setIsOpen(true)} className='register-card p-4 md:mb-10 mb-10 lg:mb-0'>
+                        </Link>
+                        <div className='register-card p-4 md:mb-10 mb-10 lg:mb-0 opacity-60'>
                             <div>
                                 <img src={signupListner} alt='Sign Up Player' className='mx-auto lg:max-w-[65%] xl:max-w-max' />
                             </div>
@@ -46,7 +45,6 @@ function Signup() {
                         </div>
                     </div>
                 </div>
-                <SignupModal isOpen={isOpen} onHide={() => setIsOpen(false)} />
             </div>
     )
 }

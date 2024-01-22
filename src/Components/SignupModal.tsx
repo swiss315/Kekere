@@ -96,7 +96,7 @@ function SignupModal(props: any) {
                                             <p className='w-full text-custom'>or Register with</p>
                                             <hr className='w-full'/>
                                         </div>
-                                        {/*Social Login*/}
+                                        {/*Social LoginForm*/}
                                         <div className='flex justify-between gap-4 pt-6'>
                                             <button type='button' className=' flex gap-3 items-center w-full border-custom font-semibold border py-3 px-7 rounded-custom'>
                                                 <GoogleIcon /> Google
