@@ -338,7 +338,7 @@ function Viewproperty() {
                     </div>
                 </div>
             </div> :
-                <BuyProperty onHide={() => setBuy(true)} />}
+                <BuyProperty onHide={() => setBuy(false)} />}
         </div>
     )
 }

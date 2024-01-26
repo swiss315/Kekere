@@ -60,7 +60,7 @@ function BuyProperty(props: any) {
                     <ArrowCircleLeft2 size="42" variant="Bold" color="#20996B" onClick={() => props.onHide()}/>
                 </div>
                 { !review ?
-                    <div className='w-8/12 rounded-3xl bg-white mx-auto py-6 px-16 flex justify-between'>
+                    <div className='lg:w-9/12 xl:w-9/12 rounded-3xl bg-white mx-auto py-6 px-14 flex justify-between'>
                         <div className='w-4/12'>
                             <h1 className='font-bold pb-3 text-xl '>
                                 Price
@@ -68,7 +68,7 @@ function BuyProperty(props: any) {
                             <div
                                 className={`bg-blue-600 rounded-2xl w-full text-center py-4`}>
                                 <span className='text-custom font-semibold'>Property Value</span>
-                                <p className='font-bold text-white text-2xl py-6'>₦200,000,000</p>
+                                <p className='font-bold text-white text-2xl py-6 px-4'>₦200,000,000</p>
                                 <p className='text-white font-semibold text-sm'>Annual Return:₦6,000.000.00</p>
                             </div>
                             <div className='pt-5'>
@@ -151,7 +151,9 @@ function BuyProperty(props: any) {
                                     <div className='my-4'>
                                         <button type='button'
                                                 className='bg-custom-midnightgreen opacity-60 w-full py-3 text-white rounded-custom font-bold px-6 text-xs'
-                                                onClick={() => props.onHide()}>
+                                                onClick={() => {
+                                                    setReview(true)
+                                                }}>
                                             Continue
                                         </button>
                                     </div>
@@ -159,7 +161,7 @@ function BuyProperty(props: any) {
                             </div>
                         </div>
                     </div> :
-                    <ReviewTransaction onHide={() => setReview(true)}/>
+                    <ReviewTransaction onHide={() => setReview(false)}/>
             }
             </div>
         </div>

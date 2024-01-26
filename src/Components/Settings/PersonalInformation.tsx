@@ -44,6 +44,24 @@ function PersonalInformation() {
             <div className='flex w-full gap-5'>
                 <InputField name='Phone Number' type='tel' className='w-1/2'/>
             </div>
+
+            <div className='w-full py-5 px-4' style={{backgroundColor: '#F0EEEE'}}>
+                <h1 className='text-2xl font-bold uppercase'>
+                    Identification
+                </h1>
+            </div>
+
+            <div className='flex w-full gap-5'>
+                <SelectField name='Id Type' option={gender} className='w-full'/>
+            </div>
+            <div className='flex w-full gap-5'>
+                <InputField name='Id Number' type='text' className='w-full'/>
+            </div>
+            <div className='flex w-full gap-5'>
+                <button className='bg-custom-midnightgreen text-white py-2 px-12 font-semibold rounded-custom border-0'>
+                    Save Changes
+                </button>
+            </div>
         </div>
     )
 }
