@@ -1,13 +1,13 @@
 import React, {useState} from "react";
-import {ReactComponent as RegisterBg} from "../Assets/Images/registerbg.svg"
+// import {ReactComponent as RegisterBg} from "../Assets/Images/registerbg.svg"
 import {ReactComponent as EmailIcon} from '../Assets/Icons/Emailiconwhite.svg';
-import {ReactComponent as PasswordIcon} from '../Assets/Icons/passwordicon.svg';
+// import {ReactComponent as PasswordIcon} from '../Assets/Icons/passwordicon.svg';
 import {Link} from "react-router-dom";
 import {useLogin} from "../Hooks/Login";
 import {ReactComponent as HomeAbstract} from "../Assets/Images/homeabstract.svg";
 
 function ForgotpasswordForm() {
-    const {login, isLoading, error} = useLogin()
+    const {login, } = useLogin()
     const [data, setData] = useState({
         email: '',
         password: ''

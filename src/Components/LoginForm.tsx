@@ -7,7 +7,7 @@ import {useLogin} from "../Hooks/Login";
 import {ReactComponent as HomeAbstract} from "../Assets/Images/homeabstract.svg";
 
 function LoginForm() {
-    const {login, isLoading, error} = useLogin()
+    const {login, error} = useLogin()
     const [data, setData] = useState({
         email: '',
         password: ''
