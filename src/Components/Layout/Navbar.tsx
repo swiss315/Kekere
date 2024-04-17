@@ -19,20 +19,19 @@ function Navbar() {
                     <Logo className='w-7/12 lg:w-full md:w-full' />
                 </Link>
                 <ul className='hidden md:flex lg:flex justify-between self-center md:gap-3 items-center gap-6 h-fit font-semibold'>
-                    <li>Home</li>
-                    <li>Property</li>
-                    <li>Page</li>
-                    <li>Blog</li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/about'>About</Link></li>
+                    <li><Link to='/blog'>Blog</Link></li>
                     <li>Contact</li>
                 </ul>
                 <div className='md:hidden hidden lg:flex justify-between gap-4 self-center'>
-                    <button onClick={() => setIsOpen(true)} className='flex justify-between h-fit p-2 items-center '>
+                    <Link to='/login' className='flex justify-between h-fit p-2 items-center '>
                         <div className='flex justify-center px-1.5' >
                             <LoginIcon />
                         </div>
                         <span className='self-center font-bold'>Login</span>
-                    </button>
-                    <Link to='/register' className='flex justify-between self-center items-center h-fit bg-green-600 rounded border-0 text-white p-2'>
+                    </Link>
+                    <Link to='/register' className='flex justify-between self-center items-center h-fit bg-custom-darkgreen rounded border-0 text-white p-2'>
                         <div className='flex justify-center px-1.5' >
                             <RegisterIcon className='' />
                         </div>
@@ -91,10 +90,9 @@ function Navbar() {
                 </Menu>
             </div>
             <ul className='mt-3.5 flex md:hidden lg:hidden justify-center self-center md:gap-3 items-center py-2.5 gap-3 h-fit font-semibold border-t'>
-                <li>Home</li>
-                <li>Property</li>
-                <li>Page</li>
-                <li>Blog</li>
+                <li><Link to='/'>Home</Link></li>
+                <li><Link to='/about'>About</Link></li>
+                <li><Link to='/blog'>Blog</Link></li>
                 <li>Contact</li>
             </ul>
             <LoginModal isOpen={isOpen} onHide={() => setIsOpen(false)} />

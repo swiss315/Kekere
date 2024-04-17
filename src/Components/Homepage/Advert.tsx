@@ -16,7 +16,7 @@ function Advert() {
                             <p className='text-xs lg:text-xs xl:text-sm font-semibold md:py-2 lg:py-0'>Tell us your needs, we will give you thousands of suggestions for the dream home.</p>
                         </div>
                     </div>
-                    <button className='text-xs md:text-md absolute -bottom-5 left-1/2 transform -translate-x-1/2 flex justify-between mx-auto self-center items-center h-fit bg-green-600 rounded-custom border-0 text-white py-2 px-4 md:py-3.5 md:px-5'>
+                    <button className='text-xs md:text-md absolute -bottom-5 left-1/2 transform -translate-x-1/2 flex justify-between mx-auto self-center items-center h-fit bg-custom-midnightgreen rounded-custom border-0 text-white py-2 px-4 md:py-3.5 md:px-5'>
                         <div className='flex justify-center px-1.5' >
                             <PhoneIcon className='' />
                         </div>
@@ -31,7 +31,7 @@ function Advert() {
                             <p className='text-xs lg:text-xs xl:text-sm font-semibold md:py-2 lg:py-0'>Tell us your needs, we will give you thousands of suggestions for the dream home.</p>
                         </div>
                     </div>
-                    <button className='text-xs md:text-md absolute -bottom-5 left-1/2 transform -translate-x-1/2 flex justify-between mx-auto self-center items-center h-fit bg-green-600 rounded-custom border-0 text-white py-2 px-4 md:py-3.5 md:px-5'>
+                    <button className='text-xs md:text-md absolute -bottom-5 left-1/2 transform -translate-x-1/2 flex justify-between mx-auto self-center items-center h-fit bg-custom-midnightgreen rounded-custom border-0 text-white py-2 px-4 md:py-3.5 md:px-5'>
                         <div className='flex justify-center px-1.5' >
                             <RegisterIcon className='' />
                         </div>

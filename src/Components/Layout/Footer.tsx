@@ -63,7 +63,7 @@ function Footer() {
                     <h4 className='font-semibold mb-3.5'>Newsletter</h4>
                     <p className='pb-3'>Sign up to receive the latest articles</p>
                     <input type='text' placeholder='Enter your email address' className='w-full rounded-custom border p-4'/>
-                    <button className='bg-custom-green my-3 flex items-center gap-4 justify-center py-3.5 w-full text-white font-semibold rounded-custom text-center'>
+                    <button className='bg-custom-midnightgreen my-3 flex items-center gap-4 justify-center py-3.5 w-full text-white font-semibold rounded-custom text-center'>
                         Sign Up
                         <span>
                             <ArrowIcon />

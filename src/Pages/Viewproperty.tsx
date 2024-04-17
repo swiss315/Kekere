@@ -160,26 +160,26 @@ function Viewproperty() {
                     <ArrowLeft size="32" color="#000000" onClick={() => navigate(-1)}/>
                     <p className='font-semibold'>Property Detail</p>
                 </div>
-                <div className='rounded-3xl bg-white mx-auto py-6 px-16 flex justify-between'>
-                    <div className='w-3/12'>
+                <div className='rounded-3xl bg-white mx-auto px-3 py-6 md:px-5 lg:px-10 xl:px-16 flex justify-between'>
+                    <div className='md:w-3/12  hidden md:block'>
                         <h1 className='font-bold pb-3 text-xl '>
                             Price
                         </h1>
                         <div
                             className={` rounded-2xl w-full text-center py-4 ${property.available ? 'bg-blue-600' : 'bg-red-600'}`}>
-                            <span className='text-custom font-semibold'>Property Value</span>
-                            <p className='font-bold text-white text-2xl py-6'>₦200,000,000</p>
-                            <p className='text-white font-semibold text-sm'>Annual Return:₦6,000.000.00</p>
+                            <span className='text-custom md:text-sm text-xs font-semibold'>Property Value</span>
+                            <p className='font-bold text-white text-sm md:text-xl lg:text-2xl lg:py-4 xl:py-6'>₦200,000,000</p>
+                            <p className='text-white font-semibold text-xxs lg:text-sm'>Annual Return:₦6,000.000.00</p>
                         </div>
-                        <div className='pt-5'>
-                            <h1 className='font-bold text-xl py-5'>Owner History</h1>
+                        <div className='pt-5 md:block hidden'>
+                            <h1 className='font-bold text-sm md:text-xl py-5'>Owner History</h1>
                             <div>
                                 {
                                     ownerHistory.map((history, index) => {
                                         return (
                                             <div key={index} className='flex gap-4'>
                                                 <div>
-                                                <span className='block h-8 w-7 bg-custom-white rounded-xl'>
+                                                <span className='block md:h-8 md:w-7 h-4 w-4 bg-custom-white rounded-xl'>
                                                 </span>
                                                     <div
                                                         className={`bg-white ${index + 1 === ownerHistory.length ? 'hidden' : ''}`}>
@@ -190,9 +190,9 @@ function Viewproperty() {
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <h1 className='font-semibold'>{history.name}</h1>
-                                                    <p className='text-custom text-xs'>Payment Date {history.date}</p>
-                                                    <p className='text-custom text-xs'>Slot ID: {history.slotId}</p>
+                                                    <h1 className='font-semibold text-sm lg:text-lg'>{history.name}</h1>
+                                                    <p className='text-custom text-xxs lg:text-xs'>Payment Date {history.date}</p>
+                                                    <p className='text-custom text-xxs lg:text-xs'>Slot ID: {history.slotId}</p>
                                                     <p className='flex gap-1.5'>
                                                         {Array.from({length: 5}).map((_, index) => (
                                                             <Rating key={index}/>
@@ -211,26 +211,26 @@ function Viewproperty() {
                             Buy Slot
                         </button>
                     </div>
-                    <div className='w-8/12'>
+                    <div className='md:w-8/12 w-full'>
                         <div className='relative'>
                             <div className='relative'>
                                 <img src={propertyImage} alt='property'/>
                                 <span
-                                    className={`absolute uppercase bg-white text-red-600 top-2 font-semibold right-3 rounded-full text-xs py-2 px-2.5 property-badge`}>
+                                    className={`absolute uppercase bg-white text-red-600 top-2 font-semibold right-3 rounded-full text-xxs md:text-xs py-1 px-1.5 md:py-2 md:px-2.5 property-badge`}>
                                         Sold Out
                                 </span>
                             </div>
                             <div className='absolute bottom-0 flex px-4 w-full justify-between'>
                                 <div>
-                                    <h1 className='text-white text-2xl font-bold py-4'>
+                                    <h1 className='text-white text-lg lg:text-2xl font-bold py-4'>
                                         Luxury Dream House T-001234
                                     </h1>
-                                    <div className='flex gap-3.5 pb-3 justify-between'>
+                                    <div className='flex gap-2 md:gap-3.5 pb-3 justify-between'>
                                         <div className='flex gap-2 items-center'>
                                         <span>
                                             <Bed/>
                                         </span>
-                                            <span className='text-white font-semibold'>
+                                        <span className='text-white text-xxs md:text-xs font-semibold'>
                                             4 Bedroom
                                         </span>
                                         </div>
@@ -238,7 +238,7 @@ function Viewproperty() {
                                         <span>
                                             <Bath/>
                                         </span>
-                                            <span className='text-white font-semibold'>
+                                        <span className='text-white text-xxs md:text-xs font-semibold'>
                                             2 Bathroom
                                         </span>
                                         </div>
@@ -246,13 +246,13 @@ function Viewproperty() {
                                         <span>
                                             <Wifi/>
                                         </span>
-                                            <span className='text-white font-semibold'>
+                                        <span className='text-white text-xxs md:text-xs font-semibold'>
                                             Wifi Available
                                         </span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex flex-col gap-6 items-end -mt-11'>
+                                <div className='hidden md:flex flex-col gap-6 items-end -mt-11'>
                                     <Share/>
                                     <Expand/>
                                     <div>
@@ -267,9 +267,26 @@ function Viewproperty() {
                                 </div>
                             </div>
                         </div>
-                        <div className='py-10'>
+                        <div className='flex md:hidden gap-x-3.5 justify-between items-center'>
+                            <div className=''>
+                                <p className='flex'>
+                                    <span className='text-xxs'>Property Value :</span>
+                                    <span className='text-xxs font-bold'>₦200,000,000</span>
+                                </p>
+                                <p className='flex'>
+                                    <span className='text-xxs'>Annual Return :</span>
+                                    <span className='text-xxs font-bold'>₦6,000.000.00</span>
+                                </p>
+                            </div>
+                            <button onClick={() => setBuy(true)}
+                                    className=' bg-blue-600 text-sm w-fit border-full px-4 py-1.5 text-white font-semibold my-5 rounded-full'
+                                    style={{boxShadow: '0px 4px 4px 0px #00000040'}}>
+                                Buy Slot
+                            </button>
+                        </div>
+                        <div className='py-10 pt-5'>
                             <h1 className='font-bold pb-2'>Description</h1>
-                            <p className='text-sm'>
+                            <p className='text-xxs md:text-xs lg:text-sm'>
                                 vaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
                                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                                 cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
@@ -293,7 +310,7 @@ function Viewproperty() {
                                         imageContainer.map((image, index) => {
                                             return (
                                                 <img key={index} src={image.image} alt='placeholder'
-                                                     className='rounded-xl'/>
+                                                     className='max-w-50% max-h-50% md:max-h-max md:max-w-max rounded-xl'/>
                                             )
                                         })
                                     }
@@ -322,13 +339,13 @@ function Viewproperty() {
 
                         <div className='pb-10'>
                             <h1 className='font-bold pb-4'>Features</h1>
-                            <div className='flex overflow-hidden flex-wrap gap-y-3.5'>
+                            <div className='flex overflow-hidden flex-wrap gap-x-1 md:gap-x-0 gap-y-3.5'>
                                 {
                                     features.map((feature, index) => {
                                         return (
-                                            <div key={index} className='w-1/5 flex items-center gap-3'>
+                                            <div key={index} className='md:w-1/3 lg:w-1/4 xl:w-1/5 flex items-center gap-1.5 md:gap-3'>
                                                 <Mark/>
-                                                <p className='font-semibold text-sm'>{feature.features}</p>
+                                                <p className='font-semibold text-xxs lg:text-xs xl:text-sm'>{feature.features}</p>
                                             </div>
                                         )
                                     })

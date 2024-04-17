@@ -21,6 +21,9 @@ module.exports = {
         '35%': '35%',
         '17%': '17%'
       },
+      maxHeight: {
+        '50%': '50%'
+      },
       Width: {
         '285px': '285px',
         '200px': '200px'
@@ -56,6 +59,9 @@ module.exports = {
       },
       fill: {
         'custom': '#3CB98A'
+      },
+      fontSize: {
+        'xxs': '0.55rem'
       }
     },
   },
