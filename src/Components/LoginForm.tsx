@@ -10,7 +10,7 @@ function LoginForm() {
     const {login, error} = useLogin()
     const [data, setData] = useState({
         email: '',
-        password: ''
+        password: '',
     })
 
     const submitLogin = (e: { preventDefault: () => void; }) => {
