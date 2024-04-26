@@ -24,29 +24,33 @@ export const useLogin = () => {
         let userResponse = null;
         setIsLoading(true)
 
-        // const validateLogin = () => {
-        //     if (payload.email !== 'kekere') {
-        //         return false
-        //     }
-        //     if (payload.password !== '12345') {
-        //         return false
-        //     }
-        //
-        //     return true
-        // }
+        const validateLogin = () => {
+            if (payload.email !== 'kekere') {
+                showToast('Error', 'invalid credentials', 'error');
+                return false
+            }
+            if (payload.password !== '12345') {
+                showToast('Error', 'invalid credentials', 'error');
+                return false
+            }
+
+            return true
+        }
 
         try {
             // const response = await postLogin(payload);
             // console.log(response);
             // userResponse = response?.data?.data;
-            userResponse = {
-                token: 'hhdjdjsjsjjs'
-            }
-            if (userResponse) {
-                const { token } = userResponse;
-                dispatchLogin(token)
-                showToast('Authorization', 'This is a success toast notification', 'success');
-                navigate('/dashboard')
+            if (validateLogin()) {
+                userResponse = {
+                    token: 'hhdjdjsjsjjs'
+                }
+                if (userResponse) {
+                    const { token } = userResponse;
+                    dispatchLogin(token)
+                    showToast('Authorization', 'This is a success toast notification', 'success');
+                    navigate('/dashboard')
+                }
             }
 
         } catch (e: any) {
