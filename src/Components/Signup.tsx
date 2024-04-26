@@ -17,12 +17,12 @@ function Signup() {
                         Choose between buy and list.
                     </p>
                     <div className='lg:flex lg:gap-16'>
-                        <Link to='co-own' className='register-card p-4 md:mb-10 mb-10 lg:mb-0'>
+                        <Link to='co-own' className='block register-card p-4 md:mb-10 mb-10 lg:mb-0'>
                             <div>
                                 <img src={signupPlayer} alt='Sign Up Player' className='w-full lg:max-w-max md:max-w-[50%] md:mx-auto' />
                             </div>
                             <h1 className='text-xl font-semibold py-5'>
-                                Sign up to Co Own
+                                Sign up to Co-Own
                             </h1>
                             <p className='text-sm font-semibold text-start'>
                                 Join our talent pool of over 10,000 students

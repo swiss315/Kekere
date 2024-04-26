@@ -20,12 +20,12 @@ function ForgotpasswordForm() {
     }
     return(
         <div>
-            <div className='relative overflow-hidden' style={{height: '92vh'}}>
+            <div className='relative overflow-hidden' style={{height: '90vh'}}>
                 <div className='w-full hidden md:flex'>
                     <HomeAbstract className='abstract'/>
                 </div>
-                <div className='absolute top-20 flex flex-col items-center justify-center w-full'>
-                    <div className='bg-white rounded-xl md:w-6/12 lg:w-5/12 xl:w-4/12 overflow-hidden'
+                <div className='absolute top-0 h-screen flex flex-col items-center w-full' style={{backgroundColor: '#0000000D'}}>
+                    <div className='bg-white rounded-xl md:w-6/12 lg:w-5/12 xl:w-4/12 overflow-hidden border border-input-color my-12'
                          style={{boxShadow: '0px 2px 8px 2px #8C8C8C1A'}}>
                         <form className='w-full p-7' onSubmit={submitLogin} >
                             <div className=''>

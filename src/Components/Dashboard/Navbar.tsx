@@ -4,11 +4,14 @@ import {ReactComponent as Logo} from "../../Assets/Icons/Logo.svg";
 import {ReactComponent as Searchmagnify} from "../../Assets/Icons/searchmagnify.svg";
 import {ReactComponent as Flag} from "../../Assets/Icons/flag.svg";
 import {ReactComponent as Notification} from "../../Assets/Icons/notification.svg";
+import {ReactComponent as Power} from "../../Assets/Icons/power.svg";
 import {Element3, HambergerMenu, Wallet3, Briefcase, User, Setting2} from "iconsax-react";
+import {useAuth} from "../../Store/AuthContext";
 
 
 function Navbar() {
     const location = useLocation();
+    const {logout} = useAuth()
     let pageName = location.pathname;
     pageName = pageName.slice(1);
 
@@ -62,7 +65,7 @@ function Navbar() {
                                    placeholder='Search...'/>
                         </div>
                     </div>
-                    <div className='flex gap-5 justify-center items-center'>
+                    <div className='flex gap-10 justify-center items-center'>
                         <div>
                             <Flag className='w-7/12 lg:w-full md:w-full hidden md:block'/>
                         </div>
@@ -72,8 +75,12 @@ function Navbar() {
                         <div>
                             <Notification className='w-7/12 lg:w-full md:w-full'/>
                         </div>
+                        <div>
+                            <Power onClick={logout} className='w-7/12 lg:w-full md:w-full cursor-pointer'/>
+                        </div>
                         <div className='flex bg-custom-light-grey p-1.5 md:p-3 gap-2 items-center'>
-                            <div className='bg-white w-4 h-4 md:w-8 md:h-8 flex justify-center items-center rounded-full'>
+                            <div
+                                className='bg-white w-4 h-4 md:w-8 md:h-8 flex justify-center items-center rounded-full'>
                                 <User variant="Bold" color='#F3F3F9' className='self-center'/>
                             </div>
                             <div>
