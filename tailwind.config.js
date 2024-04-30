@@ -45,7 +45,8 @@ module.exports = {
         'custom': '#EFEFEF',
         'input-color': '#E5E5EA',
         'wait-list': '#286722',
-        'custom-grey': '#0000001A'
+        'custom-grey': '#0000001A',
+        'custom-green': '#286722'
       },
       height: {
         'custom': '356px'

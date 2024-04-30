@@ -93,17 +93,17 @@ function CoownSignup() {
                                            type="text" placeholder="Enter your username"/>
                                 </div>
                             </div>
-                            <div className='pb-3'>
-                                <label className='font-semibold text-sm pb-2'>
-                                    BVN
-                                </label>
-                                <div className="relative">
+                            {/*<div className='pb-3'>*/}
+                            {/*    <label className='font-semibold text-sm pb-2'>*/}
+                            {/*        BVN*/}
+                            {/*    </label>*/}
+                            {/*    <div className="relative">*/}
 
-                                    <input name='bvn' onChange={setOnChange} required
-                                           className="focus-visible:outline-0 text-xs w-full p-2 pl-10 border border-input-color rounded-custom"
-                                           type="text" placeholder="Enter your username"/>
-                                </div>
-                            </div>
+                            {/*        <input name='bvn' onChange={setOnChange} required*/}
+                            {/*               className="focus-visible:outline-0 text-xs w-full p-2 pl-10 border border-input-color rounded-custom"*/}
+                            {/*               type="text" placeholder="Enter your username"/>*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
                             <div className='pb-3'>
                                 <label className='font-semibold text-sm pb-2'>
                                     Password

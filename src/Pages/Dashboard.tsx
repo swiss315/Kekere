@@ -3,6 +3,7 @@ import {ArrowCircleDown2, ArrowCircleLeft, ArrowCircleRight, ArrowCircleUp2, Hou
 import {ReactComponent as CoOwned} from "../Assets/Icons/coOwn.svg";
 import {ReactComponent as Development} from "../Assets/Icons/development.svg";
 import {ReactComponent as OwnedLand} from "../Assets/Icons/ownland.svg";
+import {ReactComponent as StarIcon} from "../Assets/Icons/staricon.svg";
 import backgroundImage from "../Assets/Images/refertoearn.png";
 import propertyImage from "../Assets/Images/propertyImage.png";
 import "slick-carousel/slick/slick.css";
@@ -164,7 +165,7 @@ function Dashboard() {
                             <ArrowCircleUp2 size="18" color="#0AB39C"/>
                         </div>
                         <div className='flex justify-between items-center justify-c'>
-                            <User size="20" color="#192A3E"/>
+                            <User size={size.current} color="#192A3E"/>
                             <h1 className='font-semibold uppercase text-xs md:text-xs lg:text-sm'>₦17,000,000</h1>
                         </div>
                     </div>
@@ -190,11 +191,11 @@ function Dashboard() {
                     </div>
                     <div className='py-2 px-4 lg:py-3 lg:px-7 xl:py-5 xl:px-14 border-b md:border-b-0  border-r border-custom w-6/12 md:w-full'>
                         <div className='flex justify-between items-center pb-2.5'>
-                            <h1 className='font-semibold uppercase text-xs md:text-xs lg:text-sm'>Earning</h1>
+                            <h1 className='font-semibold uppercase text-xs md:text-xs lg:text-sm'>Interest Earned</h1>
                             <ArrowCircleDown2 size="18" color="#F06548"/>
                         </div>
                         <div className='flex justify-between items-center justify-c'>
-                            <User size={size.current} color="#192A3E"/>
+                            <StarIcon className='md:max-w-50% ' color="#192A3E"/>
                             <h1 className='font-semibold uppercase text-xs md:text-xs lg:text-sm'>₦3,200,000.00</h1>
                         </div>
                     </div>

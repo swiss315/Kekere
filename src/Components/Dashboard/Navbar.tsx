@@ -5,7 +5,7 @@ import {ReactComponent as Searchmagnify} from "../../Assets/Icons/searchmagnify.
 import {ReactComponent as Flag} from "../../Assets/Icons/flag.svg";
 import {ReactComponent as Notification} from "../../Assets/Icons/notification.svg";
 import {ReactComponent as Power} from "../../Assets/Icons/power.svg";
-import {Element3, HambergerMenu, Wallet3, Briefcase, User, Setting2} from "iconsax-react";
+import {Element3, Wallet3, Briefcase, User, Setting2} from "iconsax-react";
 import {useAuth} from "../../Store/AuthContext";
 
 
@@ -26,11 +26,11 @@ function Navbar() {
             pathname: 'portfolio',
             icon: Briefcase
         },
-        {
-            Name: 'Listing',
-            pathname: 'listing',
-            icon: HambergerMenu
-        },
+        // {
+        //     Name: 'Listing',
+        //     pathname: 'listing',
+        //     icon: HambergerMenu
+        // },
         {
             Name: 'Wallet',
             pathname: 'wallet',
