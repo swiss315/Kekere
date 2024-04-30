@@ -142,13 +142,13 @@ function CoownSignup() {
                                                          className='font-semibold text-custom-green'>Login</Link></p>
                             </div>
                             <p className='text-xs text-center'>or Register with</p>
-                            <div className='flex justify-center mx-auto gap-4 pt-3 w-full lg:w-11/12'>
+                            <div className='flex justify-center mx-auto gap-2.5 pt-3 w-full lg:w-11/12 xl:w-10/12'>
                                 <button type='button'
-                                        className='text-xs bg-black flex gap-2 px-2 justify-center items-center w-full border-custom font-semibold text-white border py-2 rounded'>
+                                        className='text-xs bg-black flex gap-1 px-2 justify-center items-center w-full border-custom font-semibold text-white border py-2 rounded'>
                                     <GoogleIcon/> Sign In with Google
                                 </button>
                                 <button type='button'
-                                        className='text-xs flex gap-2 px-2 justify-center items-center w-full border-custom font-semibold border py-2 rounded text-white' style={{backgroundColor: '#1877F2'}}>
+                                        className='text-xs flex gap-1 px-2 justify-center items-center w-full border-custom font-semibold border py-2 rounded text-white' style={{backgroundColor: '#1877F2'}}>
                                     <FacebookIcon/> Login with Facebook
                                 </button>
                             </div>

@@ -64,10 +64,12 @@ function LoginForm() {
                             <div className='pb-4'>
                                 {error && <p className='text-red-500 text-xs italic'>{error}</p>}
                             </div>
-                            <button
-                                className='text-sm md:text-md w-full pt-3 mt-3.5 bg-custom-darkgreen text-white font-semibold rounded-custom py-2'>
-                                Login
-                            </button>
+                            <div className='flex justify-center'>
+                                <button
+                                    className='text-sm md:text-md w-1/2 pt-3 mt-3.5 bg-custom-darkgreen text-white font-semibold rounded-custom py-2'>
+                                    Login
+                                </button>
+                            </div>
                             <p className='text-xs text-center py-5'>or Register with</p>
                             <div className='flex justify-center mx-auto gap-4 w-full lg:w-11/12'>
                                 <button type='button'
