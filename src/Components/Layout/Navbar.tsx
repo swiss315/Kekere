@@ -18,11 +18,12 @@ function Navbar() {
                 <Link to='/'>
                     <Logo className='w-7/12 lg:w-full md:w-full' />
                 </Link>
-                <ul className='hidden md:flex lg:flex justify-between self-center md:gap-3 items-center gap-6 h-fit font-semibold'>
+                <ul className='hidden md:flex lg:flex justify-between self-center md:gap-3 items-center gap-10 h-fit font-semibold'>
                     {/*<li><Link to='/'>Home</Link></li>*/}
-                    <li><Link to='/about'>About</Link></li>
+                    <li>Property</li>
+                    <li><Link to='/about'>About Us</Link></li>
                     <li><Link to='/blog'>Blog</Link></li>
-                    <li>Contact</li>
+                    <li>Contact Us</li>
                 </ul>
                 <div className='md:hidden hidden lg:flex justify-between gap-4 self-center'>
                     <Link to='/login' className='flex justify-between h-fit p-2 items-center '>

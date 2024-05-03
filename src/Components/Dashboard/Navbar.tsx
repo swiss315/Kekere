@@ -22,7 +22,7 @@ function Navbar() {
             icon: Element3
         },
         {
-            Name: 'Portfolio',
+            Name: 'Property',
             pathname: 'portfolio',
             icon: Briefcase
         },

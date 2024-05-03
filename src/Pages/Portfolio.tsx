@@ -115,19 +115,25 @@ function Portfolio() {
                                 <option defaultValue=''>
                                     Property type
                                 </option>
+                                <option defaultValue=''>
+                                    Rent
+                                </option>
+                                <option defaultValue=''>
+                                    Co-Own
+                                </option>
                             </select>
                         </div>
                         <div className='flex items-center border-custom-green border rounded-full px-2.5 py-2'>
                             <UsdCoin size="18" color="#286722"/>
                             <select className='focus-visible:outline-0 border-0 text-xs px-2 text-custom'>
                                 <option defaultValue=''>
-                                    Property type
+                                    Price Range
                                 </option>
                             </select>
                         </div>
-                        <div className='flex gap-2 items-center bg-black border-custom-green border rounded-full px-6 py-2'>
+                        <div className='flex gap-2 items-center bg-black border-custom-green border rounded-lg px-4 py-2'>
                             <SearchNormal1 size="18" color="#ffffff"/>
-                            <p className='text-white text-xs md:text-sm'>Search</p>
+                            {/*<p className='text-white text-xs md:text-sm'>Search</p>*/}
                         </div>
                     </div>
                     {/*<div className='flex gap-2 items-center'>*/}
@@ -152,12 +158,12 @@ function Portfolio() {
                     {/*        </div>*/}
                     {/*    </label>*/}
                     {/*</div>*/}
-                    <div>
-                        <button
-                            className='bg-custom-midnightgreen text-xs md:text-sm font-semibold rounded-custom py-2 px-6 text-white'>
-                            Make an Investment
-                        </button>
-                    </div>
+                    {/*<div>*/}
+                    {/*    <button*/}
+                    {/*        className='bg-custom-midnightgreen text-xs md:text-sm font-semibold rounded-custom py-2 px-6 text-white'>*/}
+                    {/*        Make an Investment*/}
+                    {/*    </button>*/}
+                    {/*</div>*/}
                 </div>
                 <div className='py-4'>
                     <h1 className='font-semibold text-xl'>

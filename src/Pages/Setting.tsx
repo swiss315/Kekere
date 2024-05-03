@@ -12,7 +12,7 @@ function Setting() {
     const tabs = [
         { id: 'personal', label: 'Personal Information' },
         { id: 'nextofkin', label: 'Next Of Kin' },
-        { id: 'bankandcard', label: 'Bank and Cards' },
+        // { id: 'bankandcard', label: 'Bank and Cards' },
         { id: 'changepassword', label: 'Change Password' },
     ];
     const history = useNavigate();
