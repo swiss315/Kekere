@@ -1,7 +1,7 @@
 import React, {useRef} from 'react'
 import {Link, useLocation} from "react-router-dom";
 import {ReactComponent as Logo} from "../../Assets/Icons/Logo.svg";
-import {ReactComponent as Searchmagnify} from "../../Assets/Icons/searchmagnify.svg";
+// import {ReactComponent as Searchmagnify} from "../../Assets/Icons/searchmagnify.svg";
 import {ReactComponent as Flag} from "../../Assets/Icons/flag.svg";
 import {ReactComponent as Notification} from "../../Assets/Icons/notification.svg";
 import {ReactComponent as Power} from "../../Assets/Icons/power.svg";
@@ -58,12 +58,12 @@ function Navbar() {
                         <Link to='/'>
                             <Logo className='w-full md:w-7/12 lg:w-full md:w-full h-10'/>
                         </Link>
-                        <div className='hidden md:flex bg-custom-light-grey rounded-md h-fit self-center p-3'>
-                            <Searchmagnify/>
-                            <input type='text'
-                                   className='border-0 bg-custom-light-grey focus-visible:outline-0 rounded-md'
-                                   placeholder='Search...'/>
-                        </div>
+                        {/*<div className='hidden md:flex bg-custom-light-grey rounded-md h-fit self-center p-3'>*/}
+                        {/*    <Searchmagnify/>*/}
+                        {/*    <input type='text'*/}
+                        {/*           className='border-0 bg-custom-light-grey focus-visible:outline-0 rounded-md'*/}
+                        {/*           placeholder='Search...'/>*/}
+                        {/*</div>*/}
                     </div>
                     <div className='flex gap-10 justify-center items-center'>
                         <div>

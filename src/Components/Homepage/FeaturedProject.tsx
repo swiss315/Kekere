@@ -77,42 +77,42 @@ function FeaturedProject() {
             priceOfSlot: '₦20,000,000',
             annualEarning: '₦2,000,000'
         },
-        {
-            id: 5,
-            title: 'Co-owned House',
-            totalPrice: '₦100,000,000',
-            noOfSlotAvailable: 0,
-            totalNumberOfSlot: 9,
-            priceOfSlot: '₦20,000,000',
-            annualEarning: '₦2,000,000'
-        },
-        {
-            id: 6,
-            title: 'Co-owned House',
-            totalPrice: '₦100,000,000',
-            noOfSlotAvailable: 0,
-            totalNumberOfSlot: 9,
-            priceOfSlot: '₦20,000,000',
-            annualEarning: '₦2,000,000'
-        },
-        {
-            id: 7,
-            title: 'Co-owned House',
-            totalPrice: '₦100,000,000',
-            noOfSlotAvailable: 6,
-            totalNumberOfSlot: 9,
-            priceOfSlot: '₦20,000,000',
-            annualEarning: '₦2,000,000'
-        },
-        {
-            id: 8,
-            title: 'Co-owned House',
-            totalPrice: '₦100,000,000',
-            noOfSlotAvailable: 3,
-            totalNumberOfSlot: 9,
-            priceOfSlot: '₦20,000,000',
-            annualEarning: '₦2,000,000'
-        }
+        // {
+        //     id: 5,
+        //     title: 'Co-owned House',
+        //     totalPrice: '₦100,000,000',
+        //     noOfSlotAvailable: 0,
+        //     totalNumberOfSlot: 9,
+        //     priceOfSlot: '₦20,000,000',
+        //     annualEarning: '₦2,000,000'
+        // },
+        // {
+        //     id: 6,
+        //     title: 'Co-owned House',
+        //     totalPrice: '₦100,000,000',
+        //     noOfSlotAvailable: 0,
+        //     totalNumberOfSlot: 9,
+        //     priceOfSlot: '₦20,000,000',
+        //     annualEarning: '₦2,000,000'
+        // },
+        // {
+        //     id: 7,
+        //     title: 'Co-owned House',
+        //     totalPrice: '₦100,000,000',
+        //     noOfSlotAvailable: 6,
+        //     totalNumberOfSlot: 9,
+        //     priceOfSlot: '₦20,000,000',
+        //     annualEarning: '₦2,000,000'
+        // },
+        // {
+        //     id: 8,
+        //     title: 'Co-owned House',
+        //     totalPrice: '₦100,000,000',
+        //     noOfSlotAvailable: 3,
+        //     totalNumberOfSlot: 9,
+        //     priceOfSlot: '₦20,000,000',
+        //     annualEarning: '₦2,000,000'
+        // }
     ]
 
     return (

@@ -9,8 +9,8 @@ function Signup() {
             <div className='flex items-center' style={{height: '88vh'}}>
                 <div className='mx-auto lg:w-1/2 md:w-1/2 w-9/12 text-center my-auto' >
                     <h1 className='text-4xl font-bold pt-14 md:pt-0'>
-                        Welcome to our <br className='hidden md:inline-block' />
-                        mini estate Website
+                        Welcome to <br className='hidden md:inline-block' />
+                        Kekere Website
                     </h1>
                     <p className='text-sm font-semibold py-4 md:mb-8'>
                         Select how you want to proceed with the platform. <br className='hidden md:inline-block' />

@@ -161,7 +161,7 @@ function Dashboard() {
                 <div className='md:flex-row flex-wrap md:flex-nowrap flex w-11/12 lg:w-11/12 mx-auto bg-white dashboardcard rounded mb-1.5'>
                     <div className='py-2 px-4 lg:py-3 lg:px-7 xl:py-5 xl:px-14 border-b md:border-b-0 border-r border-custom w-6/12 md:w-full'>
                         <div className='flex justify-between items-center pb-2.5'>
-                            <h1 className='font-semibold uppercase text-xs md:text-xs lg:text-sm'>Portfolio value</h1>
+                            <h1 className='font-semibold uppercase text-xs md:text-xs lg:text-sm'>Property value</h1>
                             <ArrowCircleUp2 size="18" color="#0AB39C"/>
                         </div>
                         <div className='flex justify-between items-center justify-c'>

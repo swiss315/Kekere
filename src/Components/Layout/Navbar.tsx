@@ -19,7 +19,7 @@ function Navbar() {
                     <Logo className='w-7/12 lg:w-full md:w-full' />
                 </Link>
                 <ul className='hidden md:flex lg:flex justify-between self-center md:gap-3 items-center gap-6 h-fit font-semibold'>
-                    <li><Link to='/'>Home</Link></li>
+                    {/*<li><Link to='/'>Home</Link></li>*/}
                     <li><Link to='/about'>About</Link></li>
                     <li><Link to='/blog'>Blog</Link></li>
                     <li>Contact</li>
